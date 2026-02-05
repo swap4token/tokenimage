@@ -16,7 +16,7 @@ module.exports = async (req, res) => {
     }
 
     // 配置GitHub（请务必修改！）
-    const GITHUB_USERNAME = 'YOUR_GITHUB_USERNAME'; // 替换！
+    const GITHUB_USERNAME = 'swap4token'; // 替换！
     const GITHUB_REPO = 'tokenimage';
     const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
     if (!GITHUB_TOKEN) return res.status(500).json({ error: '服务器配置错误' });
@@ -52,3 +52,4 @@ module.exports = async (req, res) => {
     return res.status(500).json({ error: `处理失败: ${error.message}` });
   }
 };
+
